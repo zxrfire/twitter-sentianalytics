@@ -12,4 +12,3 @@ if __name__ == "__main__":
     data = pag1.json()
     with open('pag1.txt', 'w') as f:
         f.write(json.dumps(data))
-
