@@ -64,7 +64,7 @@ if __name__ == "__main__":
 
     next_token = -1
     count = 0
-    listTopics = ['almond latte', 'mango boba', 'bluepill', 'react query']
+    listTopics = ['almond latte', 'mango boba', 'dji mavic', 'react query']
 
     for topic in listTopics:
         listToMerge = []
