@@ -1,0 +1,792 @@
+{
+  "avgNeg": 0.03757000000000001,
+  "avgNeu": 0.8289799999999997,
+  "avgPos": 0.11347,
+  "avgCompound": 0.18842099999999998,
+  "scores": [
+    {
+      "text": "RT @chrissxs: I want a caramel sweet foam oat latte https://t.co/yK1HEEl86E",
+      "created_at": "2022-03-10T02:42:54.000Z",
+      "neg": 0.0,
+      "neu": 0.619,
+      "pos": 0.381,
+      "compound": 0.5106
+    },
+    {
+      "text": "RT @_simplyshanee: #DOTD iced vanilla latte with soy milk + extra caramel drizzle 🤍 7.2/10\nI wanted to try a different milk to see wassup.…",
+      "created_at": "2022-03-10T02:04:42.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "#Hemp Infused Drinks - Iced Matcha Caramel Oat Milk Hemp Latte https://t.co/2VCXMXhsiM #CBG #Delta8 #THC #CBDedibles #CannabisCulture #50ShadesofGreen",
+      "created_at": "2022-03-10T01:55:12.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "RT @perkycupshtx: Stephany is here until 8pm this Wednesday 💋 Hurry in for our delicious Caramel iced latte and add an extra shot of espres…",
+      "created_at": "2022-03-10T01:48:43.000Z",
+      "neg": 0.0,
+      "neu": 0.861,
+      "pos": 0.139,
+      "compound": 0.5719
+    },
+    {
+      "text": "RT @a_syifa19: Buttercream Latte ft Caramel Macchiato 10/10✨\nChocolate ft Caramel Croffle 10/10❤️\n \nVery nice and friendly owner\nEverything…",
+      "created_at": "2022-03-10T01:40:29.000Z",
+      "neg": 0.0,
+      "neu": 0.722,
+      "pos": 0.278,
+      "compound": 0.762
+    },
+    {
+      "text": "iced hojicha classic tea latte \n-add whip \n-add caramel \n-extra whip\n-extra syrup \n-extra caramel \n\nhe also said the base is white mocha? and i’m too scared to figure out how that works and i don’t want to think about it for too long https://t.co/OeT4XoEGaz",
+      "created_at": "2022-03-10T01:27:00.000Z",
+      "neg": 0.063,
+      "neu": 0.909,
+      "pos": 0.028,
+      "compound": -0.3818
+    },
+    {
+      "text": "Favorite hot Starbucks order:\ntall (12 oz) latte, 2 pumps brown sugar syrup, 1 pump caramel syrup, vanilla sweet cream cold foam\nNot too sweet, no strong coffee taste.\nIt is $5.80, so I only get it if I have extra reward points",
+      "created_at": "2022-03-10T01:20:53.000Z",
+      "neg": 0.0,
+      "neu": 0.648,
+      "pos": 0.352,
+      "compound": 0.9508
+    },
+    {
+      "text": "#DOTD iced vanilla latte with soy milk + extra caramel drizzle 🤍 7.2/10\nI wanted to try a different milk to see wassup. Off rip, this milk thinner than whole. I notice that immediately and it has an aftertaste that ine too crazy about but it just.. okay. Not bad as a sub milk. https://t.co/c1SxBGC34S",
+      "created_at": "2022-03-10T01:18:16.000Z",
+      "neg": 0.032,
+      "neu": 0.855,
+      "pos": 0.114,
+      "compound": 0.6625
+    },
+    {
+      "text": "ㅤ\n     the moment he touched her ,  latte shook her head .\n\n     the friend she met while hunting turned out to be the one who ruined the land she bonded with them over .  caramel arrow might have to hurt the king to keep everyone safe .\n\n☕️ °•. https://t.co/CK9dzP5AT9",
+      "created_at": "2022-03-10T01:11:51.000Z",
+      "neg": 0.146,
+      "neu": 0.741,
+      "pos": 0.113,
+      "compound": -0.2023
+    },
+    {
+      "text": "@theyhatezariaa_ Ice blonde latte with white mocha, caramel and cold foam",
+      "created_at": "2022-03-10T01:07:26.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "@streetprayerr chai latte with vanilla sweet cold brown sugar and caramel drizzle 😁",
+      "created_at": "2022-03-10T01:07:03.000Z",
+      "neg": 0.0,
+      "neu": 0.786,
+      "pos": 0.214,
+      "compound": 0.4588
+    },
+    {
+      "text": "Oreo Has a New Limited-Edition Mocha Caramel Latte Flavor Hitting Shelves This April https://t.co/IXt0ZmxEwy",
+      "created_at": "2022-03-10T01:00:03.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "@Nothinbuttreble This is my favorite. I also like their caramel, café latte, and winter mint chocolate flavors. https://t.co/4HrFtAhh4e",
+      "created_at": "2022-03-10T00:39:36.000Z",
+      "neg": 0.0,
+      "neu": 0.732,
+      "pos": 0.268,
+      "compound": 0.6705
+    },
+    {
+      "text": "@xxlrichrich I'll take a caramel white chocolate half frap half iced latte with 3 1/2 pumps off Expresso extra from what is already added with light foam and use oat milk instead.",
+      "created_at": "2022-03-10T00:32:41.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "I got a salted caramel latte from @dunkindonuts today and let me tell you, I’m getting one tomorrow too 🥴😋😂",
+      "created_at": "2022-03-10T00:24:19.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "RT @a_syifa19: Buttercream Latte ft Caramel Macchiato 10/10✨\nChocolate ft Caramel Croffle 10/10❤️\n \nVery nice and friendly owner\nEverything…",
+      "created_at": "2022-03-10T00:13:48.000Z",
+      "neg": 0.0,
+      "neu": 0.722,
+      "pos": 0.278,
+      "compound": 0.762
+    },
+    {
+      "text": "Mocha Caramel Latte-Flavored Oreos Are Hitting Shelves Soon https://t.co/wtpc3tCkDY",
+      "created_at": "2022-03-10T00:10:55.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "RT @raquel_goddess: Ordered an iced caramel latte + sugar and it just tastes like 2 shots of coffee 😭 \n\nSo frustrating!! \n\nfindom findomaus…",
+      "created_at": "2022-03-09T23:43:21.000Z",
+      "neg": 0.156,
+      "neu": 0.741,
+      "pos": 0.103,
+      "compound": -0.3131
+    },
+    {
+      "text": "@kalawak_n matcha latte or just an iced caramel macchiato cause im basic",
+      "created_at": "2022-03-09T23:24:34.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "@knicolewriting - Caramel latte, half decaf (or I’ll shake lol), with half &amp; half. Cold or hot, whatever the weather says. Sometimes I get extra caramel. \n- Strawberry Açaí or Mango Dragonfruit Refresher, light ice, no fruit.  \n- Caramel Apple Spice.",
+      "created_at": "2022-03-09T23:18:31.000Z",
+      "neg": 0.1,
+      "neu": 0.9,
+      "pos": 0.0,
+      "compound": -0.4404
+    },
+    {
+      "text": "RT @people: Oreo Has a New Limited-Edition Mocha Caramel Latte Flavor Hitting Shelves This April  https://t.co/UMbG1vorvY",
+      "created_at": "2022-03-09T23:16:19.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "@skpdua I normally get a venti vanilla latte, two shots hazelnut, two shots caramel, with vanilla sweet cream cold foam on top &amp; extra caramel drizzle! Would recommend! (But probably only 1/1 for the shots if you're doing something smaller!!)",
+      "created_at": "2022-03-09T22:55:53.000Z",
+      "neg": 0.0,
+      "neu": 0.805,
+      "pos": 0.195,
+      "compound": 0.816
+    },
+    {
+      "text": "Unleaded: 3.89\nDiesel: 4.19\n\nRegular caramel mocha latte, whip cream: 5.19 https://t.co/8aOFTHsSuI",
+      "created_at": "2022-03-09T22:49:29.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "RT @chrissxs: I want a caramel sweet foam oat latte https://t.co/yK1HEEl86E",
+      "created_at": "2022-03-09T22:48:44.000Z",
+      "neg": 0.0,
+      "neu": 0.619,
+      "pos": 0.381,
+      "compound": 0.5106
+    },
+    {
+      "text": "RT @raquel_goddess: Ordered an iced caramel latte + sugar and it just tastes like 2 shots of coffee 😭 \n\nSo frustrating!! \n\nfindom findomaus…",
+      "created_at": "2022-03-09T22:47:32.000Z",
+      "neg": 0.156,
+      "neu": 0.741,
+      "pos": 0.103,
+      "compound": -0.3131
+    },
+    {
+      "text": "@Jessbeesknees Iced caramel latte. Hash browns. Snackin bacon. And I like chocolate donuts",
+      "created_at": "2022-03-09T22:44:07.000Z",
+      "neg": 0.0,
+      "neu": 0.815,
+      "pos": 0.185,
+      "compound": 0.3612
+    },
+    {
+      "text": "to me an iced latte with oatmilk and caramel in it is gonna be amazing everytime if not i’d get a ice peach green tea lemonade https://t.co/1nLefKzBJE",
+      "created_at": "2022-03-09T22:34:53.000Z",
+      "neg": 0.0,
+      "neu": 0.868,
+      "pos": 0.132,
+      "compound": 0.5859
+    },
+    {
+      "text": "Finished the walk with a delicious creamy caramel macchiato coffee talk latte. Tasted like ice cream especially when accompanied with salted caramel honeycomb ice cream with a fudge stick . Yummy !",
+      "created_at": "2022-03-09T22:27:59.000Z",
+      "neg": 0.0,
+      "neu": 0.716,
+      "pos": 0.284,
+      "compound": 0.8718
+    },
+    {
+      "text": "RT @perkycupshtx: Stephany is here until 8pm this Wednesday 💋 Hurry in for our delicious Caramel iced latte and add an extra shot of espres…",
+      "created_at": "2022-03-09T22:24:45.000Z",
+      "neg": 0.0,
+      "neu": 0.861,
+      "pos": 0.139,
+      "compound": 0.5719
+    },
+    {
+      "text": "RT @AndyOstroy: I wonder how many ‘patriots’ are bitching about gas prices but spending $7 a day for a venti whipped half-caff frap roast 1…",
+      "created_at": "2022-03-09T22:08:36.000Z",
+      "neg": 0.069,
+      "neu": 0.931,
+      "pos": 0.0,
+      "compound": -0.1406
+    },
+    {
+      "text": "RT @people: Oreo Has a New Limited-Edition Mocha Caramel Latte Flavor Hitting Shelves This April  https://t.co/UMbG1vorvY",
+      "created_at": "2022-03-09T22:08:26.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "@fizzywhizzy2 latte with soya milk and caramel sauce - i’m lactose intolerant 😂",
+      "created_at": "2022-03-09T22:05:28.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "RT @raquel_goddess: Ordered an iced caramel latte + sugar and it just tastes like 2 shots of coffee 😭 \n\nSo frustrating!! \n\nfindom findomaus…",
+      "created_at": "2022-03-09T22:05:11.000Z",
+      "neg": 0.156,
+      "neu": 0.741,
+      "pos": 0.103,
+      "compound": -0.3131
+    },
+    {
+      "text": "Ordered an iced caramel latte + sugar and it just tastes like 2 shots of coffee 😭 \n\nSo frustrating!! \n\nfindom findomaus beta domme https://t.co/RuCYiFOMbi",
+      "created_at": "2022-03-09T22:02:07.000Z",
+      "neg": 0.149,
+      "neu": 0.752,
+      "pos": 0.099,
+      "compound": -0.3131
+    },
+    {
+      "text": "RT @chromatures: Shantal snapped her gum too much in line at Starbucks. She was only tagged for community service until she ordered a doubl…",
+      "created_at": "2022-03-09T21:57:04.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "@dsaltnick the caramel craze iced latte and it’s because it has a nice cinnamon touch to it that really makes it good",
+      "created_at": "2022-03-09T21:56:39.000Z",
+      "neg": 0.063,
+      "neu": 0.704,
+      "pos": 0.233,
+      "compound": 0.6557
+    },
+    {
+      "text": "@ramshizzzle iced latte w salted caramel cold foam or just iced latte",
+      "created_at": "2022-03-09T21:56:32.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "@sinjinpool omg sorry I was in math its a latte with brown sugar syrup,  cold foam and caramel drizzle sorry if im late",
+      "created_at": "2022-03-09T21:52:54.000Z",
+      "neg": 0.12,
+      "neu": 0.88,
+      "pos": 0.0,
+      "compound": -0.1531
+    },
+    {
+      "text": "Mocha Caramel Latte-Flavored Oreos Are Hitting Shelves Soon https://t.co/GhtN3MhmNJ https://t.co/r5DkuNWIy8",
+      "created_at": "2022-03-09T21:46:05.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "this salted caramel iced latte just brought me back to life i promise you.",
+      "created_at": "2022-03-09T21:40:48.000Z",
+      "neg": 0.0,
+      "neu": 0.839,
+      "pos": 0.161,
+      "compound": 0.3182
+    },
+    {
+      "text": "@dunkindonuts please never discontinue the salted caramel latte it is so good and the only thing that has brought me happiness in months #loveyou",
+      "created_at": "2022-03-09T21:34:00.000Z",
+      "neg": 0.0,
+      "neu": 0.685,
+      "pos": 0.315,
+      "compound": 0.8638
+    },
+    {
+      "text": "And it's supposed to be a caramel latte 😭😭",
+      "created_at": "2022-03-09T21:19:41.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "Not getting a venti caramel latte won’t help me get more petrol whilst community nursing will it 🤪🤪 https://t.co/6YR9TlXBMN",
+      "created_at": "2022-03-09T21:16:37.000Z",
+      "neg": 0.0,
+      "neu": 0.863,
+      "pos": 0.137,
+      "compound": 0.4019
+    },
+    {
+      "text": "Powered by Coffee - Unisex Jersey Short Sleeve Tee, drink coffee, coffee quote, to go juice, latte, caramel, chocolate, whipped, drizzle https://t.co/uxMgDTq9az via @Etsy",
+      "created_at": "2022-03-09T21:07:05.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "Stephany is here until 8pm this Wednesday 💋 Hurry in for our delicious Caramel iced latte and add an extra shot of espresso! #htx #htown #Houston #houstontx #houstonmodels #bikinibarista https://t.co/uDzK6s89xd",
+      "created_at": "2022-03-09T21:03:40.000Z",
+      "neg": 0.0,
+      "neu": 0.875,
+      "pos": 0.125,
+      "compound": 0.6114
+    },
+    {
+      "text": "i had an iced caramel latte and hoo boy has my caffeine tolerance disappeared my whole body is vibrating",
+      "created_at": "2022-03-09T21:03:13.000Z",
+      "neg": 0.095,
+      "neu": 0.796,
+      "pos": 0.109,
+      "compound": 0.0772
+    },
+    {
+      "text": "Try March’s barista special, the Irish Cream Caramel Latte! This month, all espresso beverages are 50 cents off! https://t.co/p38NBF3p5Y",
+      "created_at": "2022-03-09T21:00:03.000Z",
+      "neg": 0.0,
+      "neu": 0.846,
+      "pos": 0.154,
+      "compound": 0.508
+    },
+    {
+      "text": "@firelordkatya Beans\nToes\nCorn\nLinguini\nCappuccino \nLatte\nBrick\nConcrete\nDingus\nTeeny\nTiny\nEars\nCaramel\n99 cent Arizona Green Tea\nEarmuff",
+      "created_at": "2022-03-09T20:38:19.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "Oreo Has a New Limited-Edition Mocha Caramel Latte Flavor Hitting Shelves This April  https://t.co/UMbG1vorvY",
+      "created_at": "2022-03-09T20:29:03.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "Are we ready to have the conversation about how, Dunkin' Donuts prices are now, just as high as Starbucks??\n\nOr yall still wanna live in denial?\n\nI legit paid $5.86 for a medium, hot Caramel Craze latte this morning and it didnt sit right with me.\n\nBecause, WHY?!",
+      "created_at": "2022-03-09T20:28:33.000Z",
+      "neg": 0.032,
+      "neu": 0.892,
+      "pos": 0.076,
+      "compound": 0.4857
+    },
+    {
+      "text": "I made myself an entirely too strong salted caramel iced oat milk latte so now I’m profusely sweating &amp; fidgeting uncontrollably. How in the fuck do ppl drink coffee everyday?! it’s delish but like I gotta use way less next time. Is this how crack feels? Say crack again! CRACK! https://t.co/Z1JXZbPVR4",
+      "created_at": "2022-03-09T20:13:09.000Z",
+      "neg": 0.072,
+      "neu": 0.807,
+      "pos": 0.121,
+      "compound": 0.5825
+    },
+    {
+      "text": "Mocha Caramel Latte-Flavored Oreos Are Hitting Shelves Soon The Kitchn | Inspiring cooks, nourishing homes RS https://t.co/nGUjo1BQ8o",
+      "created_at": "2022-03-09T20:01:01.000Z",
+      "neg": 0.0,
+      "neu": 0.843,
+      "pos": 0.157,
+      "compound": 0.4215
+    },
+    {
+      "text": "the girl at starbucks has my order memorized …. walked up and I didn’t even have to say anything she just said “salted foam iced chai latte w caramel right” 🧍🏻‍♀️",
+      "created_at": "2022-03-09T19:55:37.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "RT @chrissxs: I want a caramel sweet foam oat latte https://t.co/yK1HEEl86E",
+      "created_at": "2022-03-09T19:44:28.000Z",
+      "neg": 0.0,
+      "neu": 0.619,
+      "pos": 0.381,
+      "compound": 0.5106
+    },
+    {
+      "text": "Difference between Dunkin Donuts caramel latte and the brand new “salted caramel” latte:\n\nSalt.\n\n#theygotme #consumerinsights #stopplayin #dunkincoffee https://t.co/9bigyAyhWu",
+      "created_at": "2022-03-09T19:36:22.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "Oreo Just Unveiled Mocha Caramel Latte Cookies That Have Two Layers of Coffee-Inspired Cremes https://t.co/NghVrifg92",
+      "created_at": "2022-03-09T19:34:24.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "RT @weekley: Coming next month for a limited time; @Oreo introduces new Mocha Caramel Latte Chocolate Sandwich Cookies. We will discuss it…",
+      "created_at": "2022-03-09T19:31:32.000Z",
+      "neg": 0.087,
+      "neu": 0.913,
+      "pos": 0.0,
+      "compound": -0.2263
+    },
+    {
+      "text": "Mom’s surgery was moved from 5pm tonight to 7am this morning because they were concerned about her wound. She’s out now and enjoying a much deserved caramel latte. Surgery went well, but she already had an infected wound on her leg due to a fall 4/",
+      "created_at": "2022-03-09T19:19:06.000Z",
+      "neg": 0.088,
+      "neu": 0.836,
+      "pos": 0.076,
+      "compound": -0.3716
+    },
+    {
+      "text": "Went to Dunkin’ and it was $4.50 for a small caramel latte  😐 trust and believe I ain’t going back unless I got a coupon",
+      "created_at": "2022-03-09T19:16:07.000Z",
+      "neg": 0.0,
+      "neu": 0.852,
+      "pos": 0.148,
+      "compound": 0.5106
+    },
+    {
+      "text": "RT @markie_devo: Limited Edition Mocha Caramel Latte features a chocolate wafer laced with two different flavors of creme, mocha latte and…",
+      "created_at": "2022-03-09T19:13:00.000Z",
+      "neg": 0.091,
+      "neu": 0.909,
+      "pos": 0.0,
+      "compound": -0.2263
+    },
+    {
+      "text": "RT @a_syifa19: Buttercream Latte ft Caramel Macchiato 10/10✨\nChocolate ft Caramel Croffle 10/10❤️\n \nVery nice and friendly owner\nEverything…",
+      "created_at": "2022-03-09T19:12:44.000Z",
+      "neg": 0.0,
+      "neu": 0.722,
+      "pos": 0.278,
+      "compound": 0.762
+    },
+    {
+      "text": "Had the best caramel chai latte today, omg",
+      "created_at": "2022-03-09T19:11:24.000Z",
+      "neg": 0.0,
+      "neu": 0.625,
+      "pos": 0.375,
+      "compound": 0.6369
+    },
+    {
+      "text": "RT @AndyOstroy: I wonder how many ‘patriots’ are bitching about gas prices but spending $7 a day for a venti whipped half-caff frap roast 1…",
+      "created_at": "2022-03-09T18:59:59.000Z",
+      "neg": 0.069,
+      "neu": 0.931,
+      "pos": 0.0,
+      "compound": -0.1406
+    },
+    {
+      "text": "Sipping my victory caramel latte. So happy I got to the 59s! Gonna buy this bracelet I told myself I would get if I reach 60kg! I’ve been eyeing it for months!!",
+      "created_at": "2022-03-09T18:44:42.000Z",
+      "neg": 0.0,
+      "neu": 0.806,
+      "pos": 0.194,
+      "compound": 0.74
+    },
+    {
+      "text": "April release! Yes, Please!😋 https://t.co/zEVoFYpDhY  Heather R.",
+      "created_at": "2022-03-09T18:33:01.000Z",
+      "neg": 0.0,
+      "neu": 0.646,
+      "pos": 0.354,
+      "compound": 0.508
+    },
+    {
+      "text": "RT @a_syifa19: Buttercream Latte ft Caramel Macchiato 10/10✨\nChocolate ft Caramel Croffle 10/10❤️\n \nVery nice and friendly owner\nEverything…",
+      "created_at": "2022-03-09T18:30:55.000Z",
+      "neg": 0.0,
+      "neu": 0.722,
+      "pos": 0.278,
+      "compound": 0.762
+    },
+    {
+      "text": "Got sucked into Tim Hortons promise of a caramel-cinnamon oat latté. Tastes like mud water.",
+      "created_at": "2022-03-09T18:25:37.000Z",
+      "neg": 0.16,
+      "neu": 0.585,
+      "pos": 0.255,
+      "compound": 0.2023
+    },
+    {
+      "text": "the toasted vanilla oat milk latte from starbs is GROSS it tastes like fake vanilla gas station coffee. that’s what I get for cheating on caramel macchiatos 🥲",
+      "created_at": "2022-03-09T18:17:03.000Z",
+      "neg": 0.301,
+      "neu": 0.628,
+      "pos": 0.071,
+      "compound": -0.8415
+    },
+    {
+      "text": "I’m a little slut for a caramel latte. Just a little caffeine whore who loves her sugary bean water. Just a",
+      "created_at": "2022-03-09T18:10:04.000Z",
+      "neg": 0.298,
+      "neu": 0.555,
+      "pos": 0.147,
+      "compound": -0.5898
+    },
+    {
+      "text": "@Skrrt__Vonnegut Salted caramel latte, hold the caramel, two shots vinegar",
+      "created_at": "2022-03-09T18:06:16.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "#Coffee &amp; #Cookies? Yes, please! https://t.co/d3kW6QLcQO\n_\n#newfoodfanatics #oreo #nabisco #mocha #caramel #latte",
+      "created_at": "2022-03-09T18:04:06.000Z",
+      "neg": 0.0,
+      "neu": 0.654,
+      "pos": 0.346,
+      "compound": 0.6476
+    },
+    {
+      "text": "@NctCamille ooh, an iced caramel latte please! you’re a lifesaver.",
+      "created_at": "2022-03-09T17:52:13.000Z",
+      "neg": 0.0,
+      "neu": 0.523,
+      "pos": 0.477,
+      "compound": 0.75
+    },
+    {
+      "text": "@TheatreofZen @kylegriffin1 @CNBCnow Does anyone really enjoy a caramel soy latte? LOL. SO happy @Starbucks is finally getting out.",
+      "created_at": "2022-03-09T17:51:38.000Z",
+      "neg": 0.0,
+      "neu": 0.561,
+      "pos": 0.439,
+      "compound": 0.9145
+    },
+    {
+      "text": "I have a new fave Starbucks drink thanks to TikTok but this bitch is $9. Venti iced matcha tea latte w/oat milk, 2 pumps of chai, and salted caramel cold foam. Fucking delicious!!",
+      "created_at": "2022-03-09T17:47:27.000Z",
+      "neg": 0.148,
+      "neu": 0.616,
+      "pos": 0.236,
+      "compound": 0.4066
+    },
+    {
+      "text": "@dunkindonuts what about this Salted Caramel Signature Latte was worth the upcharge? https://t.co/WCttD7In65",
+      "created_at": "2022-03-09T17:41:42.000Z",
+      "neg": 0.0,
+      "neu": 0.863,
+      "pos": 0.137,
+      "compound": 0.2263
+    },
+    {
+      "text": "I just made my own caramel iced latte and it was bomb asf so no more spending $5+ on coffee at Dunkin’ or Starbucks",
+      "created_at": "2022-03-09T17:31:40.000Z",
+      "neg": 0.213,
+      "neu": 0.787,
+      "pos": 0.0,
+      "compound": -0.6901
+    },
+    {
+      "text": "RT @weekley: Coming next month for a limited time; @Oreo introduces new Mocha Caramel Latte Chocolate Sandwich Cookies. We will discuss it…",
+      "created_at": "2022-03-09T17:30:15.000Z",
+      "neg": 0.087,
+      "neu": 0.913,
+      "pos": 0.0,
+      "compound": -0.2263
+    },
+    {
+      "text": "RT @weekley: Coming next month for a limited time; @Oreo introduces new Mocha Caramel Latte Chocolate Sandwich Cookies. We will discuss it…",
+      "created_at": "2022-03-09T17:30:15.000Z",
+      "neg": 0.087,
+      "neu": 0.913,
+      "pos": 0.0,
+      "compound": -0.2263
+    },
+    {
+      "text": "RT @weekley: Coming next month for a limited time; @Oreo introduces new Mocha Caramel Latte Chocolate Sandwich Cookies. We will discuss it…",
+      "created_at": "2022-03-09T17:30:15.000Z",
+      "neg": 0.087,
+      "neu": 0.913,
+      "pos": 0.0,
+      "compound": -0.2263
+    },
+    {
+      "text": "[Reads headline a THIRD time, involuntarily tosses caramel latte into ceiling fan, spraying the syrupy brown bev all over every single person at Starbucks] #Savvy https://t.co/Evur116KTg",
+      "created_at": "2022-03-09T17:26:15.000Z",
+      "neg": 0.0,
+      "neu": 0.913,
+      "pos": 0.087,
+      "compound": 0.3182
+    },
+    {
+      "text": "quad long shot grande in a venti cup half calf double cupped no sleeve salted caramel mocha latte with 2 pumps of vanilla substitute 2 pumps of white chocolate mocha for mocha and substitute 2 pumps of hazelnut for toffee nut half whole milk and half breve w/ no whipped cream… https://t.co/z3E0ZOKLeA",
+      "created_at": "2022-03-09T17:22:57.000Z",
+      "neg": 0.087,
+      "neu": 0.913,
+      "pos": 0.0,
+      "compound": -0.5267
+    },
+    {
+      "text": "Try our Caramel Honey Latte - smooth espresso with caramel sauce and nice dip of honey with your choice of milk, no extra charge! Try it hot, iced or blended! https://t.co/JothGdPZcC  #richlanduptown #uptownrichland #shoplocal #coffeetime https://t.co/6BIK3ZYFPM",
+      "created_at": "2022-03-09T17:00:54.000Z",
+      "neg": 0.057,
+      "neu": 0.855,
+      "pos": 0.088,
+      "compound": 0.2924
+    },
+    {
+      "text": "Coming next month for a limited time; @Oreo introduces new Mocha Caramel Latte Chocolate Sandwich Cookies. We will discuss it on #INorOUT on #Hotline at 5:25. @onaircoop @AmandaBarren @SteveBishopV100 @bradhowe07 @WSAZirr @KitchenBitz @iAmDrSoup https://t.co/AFPFqx07QE",
+      "created_at": "2022-03-09T16:57:40.000Z",
+      "neg": 0.056,
+      "neu": 0.944,
+      "pos": 0.0,
+      "compound": -0.2263
+    },
+    {
+      "text": "@Poniiboi me reading this while drinking an iced caramel latte 🧍",
+      "created_at": "2022-03-09T16:40:54.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "@_eddiehanvalen @kyusfag caramel latte !!",
+      "created_at": "2022-03-09T16:21:24.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "RT @a_syifa19: Buttercream Latte ft Caramel Macchiato 10/10✨\nChocolate ft Caramel Croffle 10/10❤️\n \nVery nice and friendly owner\nEverything…",
+      "created_at": "2022-03-09T16:21:07.000Z",
+      "neg": 0.0,
+      "neu": 0.722,
+      "pos": 0.278,
+      "compound": 0.762
+    },
+    {
+      "text": "RT @a_syifa19: Buttercream Latte ft Caramel Macchiato 10/10✨\nChocolate ft Caramel Croffle 10/10❤️\n \nVery nice and friendly owner\nEverything…",
+      "created_at": "2022-03-09T16:04:13.000Z",
+      "neg": 0.0,
+      "neu": 0.722,
+      "pos": 0.278,
+      "compound": 0.762
+    },
+    {
+      "text": "Try our Caramel Honey Latte - smooth espresso with caramel sauce and nice dip of honey with your choice of milk, no extra charge! Try it hot, iced or blended! https://t.co/oPoEJ4Y672  #richlanduptown #uptownrichland #shoplocal #coffeetime https://t.co/KlfBrvzsn6",
+      "created_at": "2022-03-09T16:03:21.000Z",
+      "neg": 0.057,
+      "neu": 0.855,
+      "pos": 0.088,
+      "compound": 0.2924
+    },
+    {
+      "text": "@MercedezLazha oooooo always looking for variations of my chait tea  def gunna give this a try🙌🏼  ----&gt; mine is iced chai latte w/ 1 pump cinnamon dolce, salted caramel foam thank me laterrrrr💜",
+      "created_at": "2022-03-09T16:00:55.000Z",
+      "neg": 0.0,
+      "neu": 0.923,
+      "pos": 0.077,
+      "compound": 0.3612
+    },
+    {
+      "text": "Coffee from @a.m.editioncoffeebooks @scuzzsaw surprised me!  Chocolate caramel waffle cone latte 😍 #coffee #latte #yummy #localcoffeeshop @ A.M. edition coffee &amp; books https://t.co/UikZFay5mH",
+      "created_at": "2022-03-09T16:00:20.000Z",
+      "neg": 0.0,
+      "neu": 0.901,
+      "pos": 0.099,
+      "compound": 0.2942
+    },
+    {
+      "text": "Shantal snapped her gum too much in line at Starbucks. She was only tagged for community service until she ordered a double caff caramel latte and drank it without losing the gum first. Straight to the hoosegow, Shantal, and think about those choices. #cclineup @cmptrCOWGIRLS https://t.co/A7sHOaVt8f",
+      "created_at": "2022-03-09T15:55:44.000Z",
+      "neg": 0.0,
+      "neu": 0.913,
+      "pos": 0.087,
+      "compound": 0.4738
+    },
+    {
+      "text": "desperate for a caramel iced latte rn but absolutely will not leave my house to get one",
+      "created_at": "2022-03-09T15:50:39.000Z",
+      "neg": 0.096,
+      "neu": 0.811,
+      "pos": 0.094,
+      "compound": -0.0084
+    },
+    {
+      "text": "RT @a_syifa19: Buttercream Latte ft Caramel Macchiato 10/10✨\nChocolate ft Caramel Croffle 10/10❤️\n \nVery nice and friendly owner\nEverything…",
+      "created_at": "2022-03-09T15:38:19.000Z",
+      "neg": 0.0,
+      "neu": 0.722,
+      "pos": 0.278,
+      "compound": 0.762
+    },
+    {
+      "text": "can i get a Tall, Non-Fat Latte With Caramel Drizzle. Grande, Iced, Sugar-Free, Vanilla Latte With Soy Milk. Triple, Venti, Soy, No Foam Latte. Triple, Venti, Half Sweet, Non-Fat, Caramel Macchiato. Decaf, Soy Latte With An Extra Shot And Cream. Tall, Half-Caff, Soy Latte At-",
+      "created_at": "2022-03-09T15:28:00.000Z",
+      "neg": 0.048,
+      "neu": 0.887,
+      "pos": 0.065,
+      "compound": 0.2023
+    },
+    {
+      "text": "Jus me &amp; my caramel signature latte against the world.",
+      "created_at": "2022-03-09T15:26:14.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "@dunkindonuts signature latte caramel craze 😍 \n\nI want one!",
+      "created_at": "2022-03-09T15:22:18.000Z",
+      "neg": 0.231,
+      "neu": 0.61,
+      "pos": 0.159,
+      "compound": -0.1511
+    },
+    {
+      "text": "Oreo Unveils New Mocha Caramel Latte Chocolate Sandwich Cookies - Chew Boom  https://t.co/pJCvmpyivS",
+      "created_at": "2022-03-09T15:21:25.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "You can't beat the combination of cookies and coffee. ☕️ https://t.co/TKEf808rbt",
+      "created_at": "2022-03-09T15:20:19.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    }
+  ]
+}
