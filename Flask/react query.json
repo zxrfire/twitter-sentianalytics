@@ -1,0 +1,792 @@
+{
+  "avgNeg": 0.0114,
+  "avgNeu": 0.8671300000000001,
+  "avgPos": 0.10146999999999996,
+  "avgCompound": 0.304097,
+  "scores": [
+    {
+      "text": "💯 Application state is just client-side cache of server data.\n\nMost use cases don't need to keep server data and client-side cache in sync. Simplify your life and just invalidate + rehydrate on every mutation.\n\nYour architecture becomes much simpler with react-query / swr. https://t.co/DaL4tBIt45",
+      "created_at": "2022-03-10T02:43:40.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "RT @icarat_ksupport: @pledisnews 📈NAVER ARTICLE📈 \n\n1. Click on the article⬆️\n2. Scroll down and log in\n3. React positively to the article a…",
+      "created_at": "2022-03-10T02:39:23.000Z",
+      "neg": 0.0,
+      "neu": 0.866,
+      "pos": 0.134,
+      "compound": 0.5267
+    },
+    {
+      "text": "RT @icarat_ksupport: @pledisnews 📈NAVER ARTICLE📈 \n\n1. Click on the article⬆️\n2. Scroll down and log in\n3. React positively to the article a…",
+      "created_at": "2022-03-10T02:39:10.000Z",
+      "neg": 0.0,
+      "neu": 0.866,
+      "pos": 0.134,
+      "compound": 0.5267
+    },
+    {
+      "text": "RT @icarat_ksupport: @pledisnews 📈NAVER ARTICLE📈 \n\n1. Click on the article⬆️\n2. Scroll down and log in\n3. React positively to the article a…",
+      "created_at": "2022-03-10T02:36:38.000Z",
+      "neg": 0.0,
+      "neu": 0.866,
+      "pos": 0.134,
+      "compound": 0.5267
+    },
+    {
+      "text": "RT @icarat_ksupport: @pledisnews 📈NAVER ARTICLE📈 \n\n1. Click on the article⬆️\n2. Scroll down and log in\n3. React positively to the article a…",
+      "created_at": "2022-03-10T02:29:12.000Z",
+      "neg": 0.0,
+      "neu": 0.866,
+      "pos": 0.134,
+      "compound": 0.5267
+    },
+    {
+      "text": "RT @icarat_ksupport: @pledisnews 📈NAVER ARTICLE📈 \n\n1. Click on the article⬆️\n2. Scroll down and log in\n3. React positively to the article a…",
+      "created_at": "2022-03-10T02:29:07.000Z",
+      "neg": 0.0,
+      "neu": 0.866,
+      "pos": 0.134,
+      "compound": 0.5267
+    },
+    {
+      "text": "@singh_saihaj Somebody else setup graphql-code-generator for that React project, so we had to do useWhateverQuery instead of useQuery(gql`query whatever { ... }`), which means many unnecessary wrapper functions.",
+      "created_at": "2022-03-10T02:00:08.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "@laurieontech @dan_abramov @tlakomy I just use React Query which removed 90% of my useEffect use cases 😅😆",
+      "created_at": "2022-03-10T01:52:45.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "@dan_abramov @tlakomy How else would you load data?  You have to do \"something\" on component initial render.  Forget suspense and all the new shiny things.  All fetching libraries are built off useEffect.  https://t.co/xBIx2gtad3",
+      "created_at": "2022-03-10T01:52:08.000Z",
+      "neg": 0.056,
+      "neu": 0.944,
+      "pos": 0.0,
+      "compound": -0.2263
+    },
+    {
+      "text": "RT @icarat_ksupport: @pledisnews 📈NAVER ARTICLE📈 \n\n1. Click on the article⬆️\n2. Scroll down and log in\n3. React positively to the article a…",
+      "created_at": "2022-03-10T01:49:37.000Z",
+      "neg": 0.0,
+      "neu": 0.866,
+      "pos": 0.134,
+      "compound": 0.5267
+    },
+    {
+      "text": "RT @icarat_ksupport: @pledisnews 📈NAVER ARTICLE📈 \n\n1. Click on the article⬆️\n2. Scroll down and log in\n3. React positively to the article a…",
+      "created_at": "2022-03-10T01:49:24.000Z",
+      "neg": 0.0,
+      "neu": 0.866,
+      "pos": 0.134,
+      "compound": 0.5267
+    },
+    {
+      "text": "RT @icarat_ksupport: @pledisnews 📈NAVER ARTICLE📈 \n\n1. Click on the article⬆️\n2. Scroll down and log in\n3. React positively to the article a…",
+      "created_at": "2022-03-10T01:49:21.000Z",
+      "neg": 0.0,
+      "neu": 0.866,
+      "pos": 0.134,
+      "compound": 0.5267
+    },
+    {
+      "text": "RT @icarat_ksupport: @pledisnews 📈NAVER ARTICLE📈 \n\n1. Click on the article⬆️\n2. Scroll down and log in\n3. React positively to the article a…",
+      "created_at": "2022-03-10T01:49:14.000Z",
+      "neg": 0.0,
+      "neu": 0.866,
+      "pos": 0.134,
+      "compound": 0.5267
+    },
+    {
+      "text": "RT @zachcodes: Unpopular opinion:\n\nRedux is pointless when using react query / Apollo client / swr",
+      "created_at": "2022-03-10T01:47:38.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "RT @JisooBrrr: -- AIRPORT ARTICLES 08/03 --\n\nCLICK THE LINKS AND REACT TO ALL ARTICLES!\n\nNAVER: 4th reaction, recommend\n🔗https://t.co/TiwZI…",
+      "created_at": "2022-03-10T01:45:18.000Z",
+      "neg": 0.0,
+      "neu": 0.872,
+      "pos": 0.128,
+      "compound": 0.4199
+    },
+    {
+      "text": "RT @icarat_ksupport: @pledisnews 📈NAVER ARTICLE📈 \n\n1. Click on the article⬆️\n2. Scroll down and log in\n3. React positively to the article a…",
+      "created_at": "2022-03-10T01:44:18.000Z",
+      "neg": 0.0,
+      "neu": 0.866,
+      "pos": 0.134,
+      "compound": 0.5267
+    },
+    {
+      "text": "RT @icarat_ksupport: @pledisnews 📈NAVER ARTICLE📈 \n\n1. Click on the article⬆️\n2. Scroll down and log in\n3. React positively to the article a…",
+      "created_at": "2022-03-10T01:42:05.000Z",
+      "neg": 0.0,
+      "neu": 0.866,
+      "pos": 0.134,
+      "compound": 0.5267
+    },
+    {
+      "text": "RT @icarat_ksupport: @pledisnews 📈NAVER ARTICLE📈 \n\n1. Click on the article⬆️\n2. Scroll down and log in\n3. React positively to the article a…",
+      "created_at": "2022-03-10T01:42:03.000Z",
+      "neg": 0.0,
+      "neu": 0.866,
+      "pos": 0.134,
+      "compound": 0.5267
+    },
+    {
+      "text": "RT @icarat_ksupport: @pledisnews 📈NAVER ARTICLE📈 \n\n1. Click on the article⬆️\n2. Scroll down and log in\n3. React positively to the article a…",
+      "created_at": "2022-03-10T01:41:00.000Z",
+      "neg": 0.0,
+      "neu": 0.866,
+      "pos": 0.134,
+      "compound": 0.5267
+    },
+    {
+      "text": "RT @icarat_ksupport: @pledisnews 📈NAVER ARTICLE📈 \n\n1. Click on the article⬆️\n2. Scroll down and log in\n3. React positively to the article a…",
+      "created_at": "2022-03-10T01:38:37.000Z",
+      "neg": 0.0,
+      "neu": 0.866,
+      "pos": 0.134,
+      "compound": 0.5267
+    },
+    {
+      "text": "@zachcodes @cicloon I didn’t say that you don’t use useSWR or react-query. I also didn’t say that you don’t use the cache.\n\nI said that you shouldn’t confuse react-query or useSWR with state. Once you call useSWR and get data out of it, that *becomes* state. It’s not state in and of itself.",
+      "created_at": "2022-03-10T01:37:11.000Z",
+      "neg": 0.037,
+      "neu": 0.963,
+      "pos": 0.0,
+      "compound": -0.2263
+    },
+    {
+      "text": "@samwightt @cicloon So what’s the alternative, manually write those useEffects to trigger network requests. \n\nManually make your own context to cache it, and essentially build your own useFetch hook? \n\nI don’t see the benefit to what you are suggesting, that swr or react query is overengineering?",
+      "created_at": "2022-03-10T01:35:51.000Z",
+      "neg": 0.0,
+      "neu": 0.929,
+      "pos": 0.071,
+      "compound": 0.5204
+    },
+    {
+      "text": "RT @icarat_ksupport: @pledisnews 📈NAVER ARTICLE📈 \n\n1. Click on the article⬆️\n2. Scroll down and log in\n3. React positively to the article a…",
+      "created_at": "2022-03-10T01:35:18.000Z",
+      "neg": 0.0,
+      "neu": 0.866,
+      "pos": 0.134,
+      "compound": 0.5267
+    },
+    {
+      "text": "RT @icarat_ksupport: @pledisnews 📈NAVER ARTICLE📈 \n\n1. Click on the article⬆️\n2. Scroll down and log in\n3. React positively to the article a…",
+      "created_at": "2022-03-10T01:35:11.000Z",
+      "neg": 0.0,
+      "neu": 0.866,
+      "pos": 0.134,
+      "compound": 0.5267
+    },
+    {
+      "text": "RT @icarat_ksupport: @pledisnews 📈NAVER ARTICLE📈 \n\n1. Click on the article⬆️\n2. Scroll down and log in\n3. React positively to the article a…",
+      "created_at": "2022-03-10T01:34:59.000Z",
+      "neg": 0.0,
+      "neu": 0.866,
+      "pos": 0.134,
+      "compound": 0.5267
+    },
+    {
+      "text": "RT @icarat_ksupport: @pledisnews 📈NAVER ARTICLE📈 \n\n1. Click on the article⬆️\n2. Scroll down and log in\n3. React positively to the article a…",
+      "created_at": "2022-03-10T01:34:48.000Z",
+      "neg": 0.0,
+      "neu": 0.866,
+      "pos": 0.134,
+      "compound": 0.5267
+    },
+    {
+      "text": "RT @icarat_ksupport: @pledisnews 📈NAVER ARTICLE📈 \n\n1. Click on the article⬆️\n2. Scroll down and log in\n3. React positively to the article a…",
+      "created_at": "2022-03-10T01:34:48.000Z",
+      "neg": 0.0,
+      "neu": 0.866,
+      "pos": 0.134,
+      "compound": 0.5267
+    },
+    {
+      "text": "RT @icarat_ksupport: @pledisnews 📈NAVER ARTICLE📈 \n\n1. Click on the article⬆️\n2. Scroll down and log in\n3. React positively to the article a…",
+      "created_at": "2022-03-10T01:34:47.000Z",
+      "neg": 0.0,
+      "neu": 0.866,
+      "pos": 0.134,
+      "compound": 0.5267
+    },
+    {
+      "text": "RT @icarat_ksupport: @pledisnews 📈NAVER ARTICLE📈 \n\n1. Click on the article⬆️\n2. Scroll down and log in\n3. React positively to the article a…",
+      "created_at": "2022-03-10T01:34:43.000Z",
+      "neg": 0.0,
+      "neu": 0.866,
+      "pos": 0.134,
+      "compound": 0.5267
+    },
+    {
+      "text": "RT @icarat_ksupport: @pledisnews 📈NAVER ARTICLE📈 \n\n1. Click on the article⬆️\n2. Scroll down and log in\n3. React positively to the article a…",
+      "created_at": "2022-03-10T01:34:34.000Z",
+      "neg": 0.0,
+      "neu": 0.866,
+      "pos": 0.134,
+      "compound": 0.5267
+    },
+    {
+      "text": "RT @icarat_ksupport: @pledisnews 📈NAVER ARTICLE📈 \n\n1. Click on the article⬆️\n2. Scroll down and log in\n3. React positively to the article a…",
+      "created_at": "2022-03-10T01:34:11.000Z",
+      "neg": 0.0,
+      "neu": 0.866,
+      "pos": 0.134,
+      "compound": 0.5267
+    },
+    {
+      "text": "@pledisnews 📈NAVER ARTICLE📈 \n\n1. Click on the article⬆️\n2. Scroll down and log in\n3. React positively to the article and recommend it\n4. Do the same with these articles too \n👉 https://t.co/c2W0vI8KBV\n\n@pledis_17 #세븐틴 #SEVENTEEN https://t.co/ygzKH6APPl",
+      "created_at": "2022-03-10T01:34:05.000Z",
+      "neg": 0.0,
+      "neu": 0.852,
+      "pos": 0.148,
+      "compound": 0.7096
+    },
+    {
+      "text": "RT @icarat_ksupport: @pledisnews 📈NAVER ARTICLE📈 \n\n1. Click on the article⬆️\n2. Scroll down and log in\n3. React positively to the article a…",
+      "created_at": "2022-03-10T01:31:59.000Z",
+      "neg": 0.0,
+      "neu": 0.866,
+      "pos": 0.134,
+      "compound": 0.5267
+    },
+    {
+      "text": "@pledisnews 📈NAVER ARTICLE📈 \n\n1. Click on the article⬆️\n2. Scroll down and log in\n3. React positively to the article and recommend it\n4. Do the same with these articles too \n👉 https://t.co/wGTLTj4DRw\n\n@pledis_17 #세븐틴 #SEVENTEEN https://t.co/IqigMK5X6o",
+      "created_at": "2022-03-10T01:31:40.000Z",
+      "neg": 0.0,
+      "neu": 0.852,
+      "pos": 0.148,
+      "compound": 0.7096
+    },
+    {
+      "text": "RT @zachcodes: Unpopular opinion:\n\nRedux is pointless when using react query / Apollo client / swr",
+      "created_at": "2022-03-10T00:57:32.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "RT @zachcodes: Unpopular opinion:\n\nRedux is pointless when using react query / Apollo client / swr",
+      "created_at": "2022-03-10T00:54:11.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "react query is the GOAT https://t.co/wPuPczvDTY",
+      "created_at": "2022-03-10T00:50:36.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "RT @t3dotgg: @zachcodes Fantastic blog by @TkDodo with more of the RQ team’s philosophy around this, great read:\n\nhttps://t.co/MdhdlIxMev",
+      "created_at": "2022-03-10T00:48:24.000Z",
+      "neg": 0.0,
+      "neu": 0.667,
+      "pos": 0.333,
+      "compound": 0.8582
+    },
+    {
+      "text": "RT @zachcodes: Unpopular opinion:\n\nRedux is pointless when using react query / Apollo client / swr",
+      "created_at": "2022-03-10T00:47:25.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "RT @zachcodes: Unpopular opinion:\n\nRedux is pointless when using react query / Apollo client / swr",
+      "created_at": "2022-03-10T00:38:49.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "RT @RamonTonnaer: React Query in 100 Seconds https://t.co/4y2pnjlKvD #dev #development https://t.co/Y77QZTPUam",
+      "created_at": "2022-03-10T00:16:33.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "@zachcodes We tried migrating from Redux -&gt; React Query @Basedash (medium-sized codebase) but found that the lack of normalization made things way more annoying to work with. Specifically optimistic updates.\n\nEnded up migrating back to modern Redux (Toolkit), very happy with the decision.",
+      "created_at": "2022-03-09T23:56:48.000Z",
+      "neg": 0.128,
+      "neu": 0.717,
+      "pos": 0.155,
+      "compound": 0.3612
+    },
+    {
+      "text": "RT @zachcodes: Unpopular opinion:\n\nRedux is pointless when using react query / Apollo client / swr",
+      "created_at": "2022-03-09T23:47:32.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "RT @zachcodes: Unpopular opinion:\n\nRedux is pointless when using react query / Apollo client / swr",
+      "created_at": "2022-03-09T23:37:24.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "RT @zachcodes: Unpopular opinion:\n\nRedux is pointless when using react query / Apollo client / swr",
+      "created_at": "2022-03-09T23:24:54.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "RT @Infoxicador: @zachcodes It is popular and now with @remix_run you might not even need react query or a special fetching library 🤯\n\nThe…",
+      "created_at": "2022-03-09T23:15:29.000Z",
+      "neg": 0.0,
+      "neu": 0.784,
+      "pos": 0.216,
+      "compound": 0.6705
+    },
+    {
+      "text": "RT @zachcodes: Unpopular opinion:\n\nRedux is pointless when using react query / Apollo client / swr",
+      "created_at": "2022-03-09T23:14:25.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "RT @zachcodes: Unpopular opinion:\n\nRedux is pointless when using react query / Apollo client / swr",
+      "created_at": "2022-03-09T23:12:53.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "RT @zachcodes: Unpopular opinion:\n\nRedux is pointless when using react query / Apollo client / swr",
+      "created_at": "2022-03-09T23:07:06.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "RT @t3dotgg: @zachcodes Fantastic blog by @TkDodo with more of the RQ team’s philosophy around this, great read:\n\nhttps://t.co/MdhdlIxMev",
+      "created_at": "2022-03-09T23:05:55.000Z",
+      "neg": 0.0,
+      "neu": 0.667,
+      "pos": 0.333,
+      "compound": 0.8582
+    },
+    {
+      "text": "RT @zachcodes: Unpopular opinion:\n\nRedux is pointless when using react query / Apollo client / swr",
+      "created_at": "2022-03-09T22:35:08.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "RT @zachcodes: Unpopular opinion:\n\nRedux is pointless when using react query / Apollo client / swr",
+      "created_at": "2022-03-09T22:32:03.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "RT @zachcodes: Unpopular opinion:\n\nRedux is pointless when using react query / Apollo client / swr",
+      "created_at": "2022-03-09T22:22:09.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "RT @zachcodes: Unpopular opinion:\n\nRedux is pointless when using react query / Apollo client / swr",
+      "created_at": "2022-03-09T22:20:04.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "@zachcodes It is popular and now with @remix_run you might not even need react query or a special fetching library 🤯\n\nThe platform is your state.",
+      "created_at": "2022-03-09T22:14:54.000Z",
+      "neg": 0.0,
+      "neu": 0.8,
+      "pos": 0.2,
+      "compound": 0.6705
+    },
+    {
+      "text": "@zachcodes React-query takes care of the majority of redux use cases. When you use it, Redux is overkill, something lighter is much better.",
+      "created_at": "2022-03-09T22:03:33.000Z",
+      "neg": 0.0,
+      "neu": 0.775,
+      "pos": 0.225,
+      "compound": 0.7269
+    },
+    {
+      "text": "RT @zachcodes: Unpopular opinion:\n\nRedux is pointless when using react query / Apollo client / swr",
+      "created_at": "2022-03-09T21:13:02.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "RT @t3dotgg: @zachcodes Fantastic blog by @TkDodo with more of the RQ team’s philosophy around this, great read:\n\nhttps://t.co/MdhdlIxMev",
+      "created_at": "2022-03-09T21:01:33.000Z",
+      "neg": 0.0,
+      "neu": 0.667,
+      "pos": 0.333,
+      "compound": 0.8582
+    },
+    {
+      "text": "@zachcodes Also RTK-query is a thing, and I'd argue it's at least just as good as react-query. It's significantly better than all the libraries you listed for optimistic updates.",
+      "created_at": "2022-03-09T20:59:37.000Z",
+      "neg": 0.07,
+      "neu": 0.696,
+      "pos": 0.235,
+      "compound": 0.6908
+    },
+    {
+      "text": "1) rtk-query is a thing\n2) Using react query and co. does not mean you don't have global state. Redux is the most boring, predictable, and debuggable tool for doing that.\n\nSo no, not pointless. https://t.co/INlxWmPABy",
+      "created_at": "2022-03-09T20:52:34.000Z",
+      "neg": 0.134,
+      "neu": 0.866,
+      "pos": 0.0,
+      "compound": -0.6232
+    },
+    {
+      "text": "RT @zachcodes: Unpopular opinion:\n\nRedux is pointless when using react query / Apollo client / swr",
+      "created_at": "2022-03-09T20:49:42.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "@zachcodes It isn't unpopular at all.  If all you do with Redux is caching server responses you don't need it at all. However, libraries like react-query/swr won't work as well as Redux if your backend doesn't return normalized data.",
+      "created_at": "2022-03-09T20:30:31.000Z",
+      "neg": 0.044,
+      "neu": 0.896,
+      "pos": 0.061,
+      "compound": 0.1744
+    },
+    {
+      "text": "RT @t3dotgg: @zachcodes Fantastic blog by @TkDodo with more of the RQ team’s philosophy around this, great read:\n\nhttps://t.co/MdhdlIxMev",
+      "created_at": "2022-03-09T20:28:22.000Z",
+      "neg": 0.0,
+      "neu": 0.667,
+      "pos": 0.333,
+      "compound": 0.8582
+    },
+    {
+      "text": "RT @zachcodes: Unpopular opinion:\n\nRedux is pointless when using react query / Apollo client / swr",
+      "created_at": "2022-03-09T20:25:05.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "RT @thissushiguy: Delegate network state management to swr or react-query. \n\nFor redux applications, chekcout RTK-query made by redux maint…",
+      "created_at": "2022-03-09T20:04:09.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "@zachcodes I doubt it , data generated on the client is the prime use case for redux / state Management libs, where as data coming from an external source like an API is where React query shines we need not maintain such data on the client to manage .. I still feel redux is here to stay.",
+      "created_at": "2022-03-09T20:00:11.000Z",
+      "neg": 0.045,
+      "neu": 0.911,
+      "pos": 0.045,
+      "compound": 0.0
+    },
+    {
+      "text": "RT @t3dotgg: @zachcodes Fantastic blog by @TkDodo with more of the RQ team’s philosophy around this, great read:\n\nhttps://t.co/MdhdlIxMev",
+      "created_at": "2022-03-09T19:47:40.000Z",
+      "neg": 0.0,
+      "neu": 0.667,
+      "pos": 0.333,
+      "compound": 0.8582
+    },
+    {
+      "text": "RT @zachcodes: Unpopular opinion:\n\nRedux is pointless when using react query / Apollo client / swr",
+      "created_at": "2022-03-09T19:24:16.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "RT @t3dotgg: @zachcodes Fantastic blog by @TkDodo with more of the RQ team’s philosophy around this, great read:\n\nhttps://t.co/MdhdlIxMev",
+      "created_at": "2022-03-09T19:17:02.000Z",
+      "neg": 0.0,
+      "neu": 0.667,
+      "pos": 0.333,
+      "compound": 0.8582
+    },
+    {
+      "text": "@zachcodes Fantastic blog by @TkDodo with more of the RQ team’s philosophy around this, great read:\n\nhttps://t.co/MdhdlIxMev",
+      "created_at": "2022-03-09T19:07:50.000Z",
+      "neg": 0.0,
+      "neu": 0.639,
+      "pos": 0.361,
+      "compound": 0.8582
+    },
+    {
+      "text": "@sallemi_oussema I needed and wrote something very similar to that. That's super useful! 👌\n\nThe only difference is that I only return whether the query matches or not - that way you can use it for any conditional logic, not only rendering different elements.\n\nhttps://t.co/DLW1WLpoKz",
+      "created_at": "2022-03-09T18:37:59.000Z",
+      "neg": 0.0,
+      "neu": 0.846,
+      "pos": 0.154,
+      "compound": 0.7959
+    },
+    {
+      "text": "@code_savant @khabubu_phathu Not the creator of React Query liking your tweet 🔥😂\n\nProbably a bot that picked it up but still 🤗\n\nAlso,\n@khabubu_phathu if one uses it as Mihlali stated above then that’s why it would be inefficient. In any tool actually, having data just sit on your FE is just bad.",
+      "created_at": "2022-03-09T18:33:22.000Z",
+      "neg": 0.085,
+      "neu": 0.881,
+      "pos": 0.033,
+      "compound": -0.5994
+    },
+    {
+      "text": "@khabubu_phathu @brian_royalb Why fetch data from your server only to store it again on your client? You’re creating an additional place for the same information to sit? React query or SWC is more efficient at this and they help ensure your data isn’t stale.",
+      "created_at": "2022-03-09T18:25:08.000Z",
+      "neg": 0.0,
+      "neu": 0.785,
+      "pos": 0.215,
+      "compound": 0.8736
+    },
+    {
+      "text": "Delegate network state management to swr or react-query. \n\nFor redux applications, chekcout RTK-query made by redux maintainers.",
+      "created_at": "2022-03-09T18:18:26.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "RT @zachcodes: Unpopular opinion:\n\nRedux is pointless when using react query / Apollo client / swr",
+      "created_at": "2022-03-09T18:02:20.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "React Quey also provides many other hot functionalities. Like useMutation hook which is commonly used to create/update/delete remote data.\n\nIf you’re interested to learn more, don’t forget to check I recommend all the React developers,\nhttps://t.co/SRh9SAdTFR",
+      "created_at": "2022-03-09T17:38:39.000Z",
+      "neg": 0.053,
+      "neu": 0.758,
+      "pos": 0.188,
+      "compound": 0.6728
+    },
+    {
+      "text": "- It also removes the need for useState and useEffect hooks and replaces them with a few lines of React Query logic like isLoading, error response, returned data.\nIn the long run, it will definitely help you keep your application maintainable, responsive, and fast.",
+      "created_at": "2022-03-09T17:38:39.000Z",
+      "neg": 0.054,
+      "neu": 0.739,
+      "pos": 0.208,
+      "compound": 0.7717
+    },
+    {
+      "text": "Benefits of React Query:\n\n- Window focus refetching – When a user leaves your tab, React Query marks the data “stale” and refetches it when that person returns.\n\n- Request retry – you can set a number of retries for any request to combat random errors.",
+      "created_at": "2022-03-09T17:38:37.000Z",
+      "neg": 0.107,
+      "neu": 0.805,
+      "pos": 0.087,
+      "compound": -0.2263
+    },
+    {
+      "text": "React Query provides us custom hooks like `useQuery` to fetch data. \nUnder the hood, these hooks manage lots of things such as `caching` data after the initial fetch, re-fetching data in the background, etc.",
+      "created_at": "2022-03-09T17:38:36.000Z",
+      "neg": 0.0,
+      "neu": 0.93,
+      "pos": 0.07,
+      "compound": 0.3612
+    },
+    {
+      "text": "React Query is a library that gives #ReactJS the state management ability for any kind of asynchronous data.",
+      "created_at": "2022-03-09T17:38:35.000Z",
+      "neg": 0.0,
+      "neu": 0.874,
+      "pos": 0.126,
+      "compound": 0.3182
+    },
+    {
+      "text": "@EddyVinckk Before it was - html, css, jquery \n\nNow - html, css, reactjs, nextjs, apollo/react query, tailiwind/chakra etc! \n\nSo much wide stack now😰",
+      "created_at": "2022-03-09T17:03:45.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "@knox_trades Not gonna lie. Seeing you query the onchain data about a month ago kind of inspired this. \"Wish I knew how to do that\". Decided starting with Python as a base and then moving over to js/rust/react/anchor with the foundation would be a little easier. 🙂",
+      "created_at": "2022-03-09T15:03:23.000Z",
+      "neg": 0.0,
+      "neu": 0.82,
+      "pos": 0.18,
+      "compound": 0.8195
+    },
+    {
+      "text": "Unpopular opinion:\n\nRedux is pointless when using react query / Apollo client / swr",
+      "created_at": "2022-03-09T15:01:31.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "@abobakerhilal @tannerlinsley If you have no global state besides server-side and want to use react-query, you are totally fine to use it on it's own. \nIf you have additional global state, you have to additionally use some global state mgmt library - RTK is one of those options.",
+      "created_at": "2022-03-09T13:25:07.000Z",
+      "neg": 0.044,
+      "neu": 0.887,
+      "pos": 0.068,
+      "compound": 0.0498
+    },
+    {
+      "text": "@abobakerhilal @tannerlinsley That depends, they server different purposes.\nReact Query is a library to handle server-side state.\nRTK (while also containing tools for handling server-side state) can be used for any kind of global application state.",
+      "created_at": "2022-03-09T13:23:53.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "I'm so glad that react-query from @tan_stack has a retry mechanism as my current projects api calls sometimes fails and then works a second or third time some authorization issue 🤣🤣🤣",
+      "created_at": "2022-03-09T12:32:58.000Z",
+      "neg": 0.085,
+      "neu": 0.816,
+      "pos": 0.1,
+      "compound": 0.1263
+    },
+    {
+      "text": "Liked on YouTube: React Query in 100 Seconds https://t.co/AFz2pZ2Xt2",
+      "created_at": "2022-03-09T12:13:07.000Z",
+      "neg": 0.0,
+      "neu": 0.741,
+      "pos": 0.259,
+      "compound": 0.4215
+    },
+    {
+      "text": "When you should think and write for your side project 🏃‍♂️ but also migrate from flux to react-query + context in your job.🏃🏼\n\nKeep calm, breathe, coding.💆",
+      "created_at": "2022-03-09T12:03:14.000Z",
+      "neg": 0.0,
+      "neu": 0.894,
+      "pos": 0.106,
+      "compound": 0.4497
+    },
+    {
+      "text": "RT @WorldwideJisoo: Make sure to react JISOO’s airport articles. Click the link.\n📌https://t.co/rMTbSv3xkD\n\n#블랙핑크지수 #JISOO #BLACKPINK https:…",
+      "created_at": "2022-03-09T11:27:04.000Z",
+      "neg": 0.0,
+      "neu": 0.874,
+      "pos": 0.126,
+      "compound": 0.3182
+    },
+    {
+      "text": "RT @Rai_Siqueira: Any example how to test React Query + Axios + MSW?\n\ncc @sseraphini @tannerlinsley",
+      "created_at": "2022-03-09T10:57:47.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "React Query is a game changer on @reactjs #React",
+      "created_at": "2022-03-09T10:35:35.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "React Query in 100 Seconds https://t.co/Hq5gWsdvsW via @YouTube",
+      "created_at": "2022-03-09T10:20:49.000Z",
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    {
+      "text": "@tannerlinsley Hi tanner I'm a bit confused I would like to ask you how to use react query with redux toolkit or can I do without it and just use react query",
+      "created_at": "2022-03-09T10:09:24.000Z",
+      "neg": 0.072,
+      "neu": 0.849,
+      "pos": 0.079,
+      "compound": 0.0516
+    },
+    {
+      "text": "Redwood Cell's power 75% of @_everfund Data fetching components. \n\nThe last 25% are useQuery with React-Query for React Table! For super smooth pagination of tables.  🚀🚀",
+      "created_at": "2022-03-09T09:41:14.000Z",
+      "neg": 0.0,
+      "neu": 0.856,
+      "pos": 0.144,
+      "compound": 0.636
+    },
+    {
+      "text": "Nevertheless, I have received spam exhorting me to buy all of these useless (to me) items from businesses who react with wounded innocence when I query the validity of the LIA that their marketing consultant claims to have done.",
+      "created_at": "2022-03-09T09:09:21.000Z",
+      "neg": 0.126,
+      "neu": 0.811,
+      "pos": 0.062,
+      "compound": -0.4019
+    },
+    {
+      "text": "Yet another awesome and informative video by @fireship_dev on React Query. Go watch it guys \n https://t.co/ljEfW7tHoy",
+      "created_at": "2022-03-09T08:52:28.000Z",
+      "neg": 0.0,
+      "neu": 0.785,
+      "pos": 0.215,
+      "compound": 0.6249
+    },
+    {
+      "text": "Nice explanation of my favorite react library. (React Query)\n\nhttps://t.co/0hreDXLGHX\n@tannerlinsley",
+      "created_at": "2022-03-09T08:18:56.000Z",
+      "neg": 0.0,
+      "neu": 0.608,
+      "pos": 0.392,
+      "compound": 0.7003
+    },
+    {
+      "text": "RT @JisooBrrr: -- AIRPORT ARTICLES 08/03 --\n\nCLICK THE LINKS AND REACT TO ALL ARTICLES!\n\nNAVER: 4th reaction, recommend\n🔗https://t.co/TiwZI…",
+      "created_at": "2022-03-09T07:35:19.000Z",
+      "neg": 0.0,
+      "neu": 0.872,
+      "pos": 0.128,
+      "compound": 0.4199
+    }
+  ]
+}

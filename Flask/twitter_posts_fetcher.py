@@ -6,6 +6,7 @@ from nltk.sentiment import SentimentIntensityAnalyzer
 import nltk
 from jsonmerge import Merger
 from flask import Flask
+import pprint
 
 app = Flask(__name__)
 
@@ -28,14 +29,14 @@ sia = SentimentIntensityAnalyzer()
 
 def getSentiment(data):
     sentimentScores = []
-
-    totalNeg, totalNeu, totalPos, totalCompound = 0, 0, 0, 0
+    totalNeg, totalNeu, totalPos, totalCompound = 0, 0, 0, 0    
 
     for x in data:
 
         sentiment = sia.polarity_scores(x["text"])
         sentimentScores.append({
             "text": x["text"],
+            "created_at": x["created_at"],
             "neg": sentiment["neg"],
             "neu": sentiment["neu"],
             "pos": sentiment["pos"],
@@ -59,22 +60,17 @@ def getSentiment(data):
         json.dump(results, f, ensure_ascii=False, indent=2)
 
 
-@app.route("/")
-def hello_world():
-    return "<p>Hello, World!</p>"
-
 if __name__ == "__main__":
-    app.run()
 
     next_token = -1
     count = 0
-    listTopics = ['nft', 'ukraine', 'russia', 'incel']
+    listTopics = ['almond latte', 'mango boba', 'bluepill', 'react query']
 
     for topic in listTopics:
         listToMerge = []
         newjson = {}
 
-        current_url = twitter_url + topic
+        current_url = twitter_url + topic + ' lang:en' + '&tweet.fields=created_at'
         for i in range(0, 10):  # request 10 times for 1000 things
             if next_token != -1:
                 new_url = current_url + '&next_token=' + str(next_token)
@@ -82,8 +78,14 @@ if __name__ == "__main__":
                 new_url = current_url
             pag1 = requests.get(new_url, headers=oath)
             data = pag1.json()
+
+            if 'next_token' not in data['meta']:
+                break
             next_token = data['meta']['next_token']
             listToMerge.append(data)
         for d in listToMerge:
             newjson = merger.merge(newjson, d)
-        getSentiment(newjson["data"])
+
+        print(newjson)
+        if 'data' in newjson:
+            getSentiment(newjson["data"])
