@@ -101,5 +101,5 @@ key.js
 .idea/
 
 key.js
-key.py
+.env
 package-lock.json
