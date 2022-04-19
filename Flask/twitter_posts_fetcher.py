@@ -10,11 +10,13 @@ from jsonmerge import Merger
 from flask import Flask
 import pprint
 from flask import request as flask_request
+from flask_cors import CORS
 
 dtformat = '%Y-%m-%dT%H:%M:%SZ'
 from datetime import datetime, timedelta
 
 app = Flask(__name__)
+CORS(app)
 
 dotenv.load_dotenv()
 nltk.download('vader_lexicon')
@@ -30,7 +32,6 @@ schema = {
 }
 merger = Merger(schema)
 sia = SentimentIntensityAnalyzer()
-
 
 @app.route('/search/<query>')
 def search(query):
