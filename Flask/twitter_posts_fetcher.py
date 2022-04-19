@@ -33,10 +33,20 @@ sia = SentimentIntensityAnalyzer()
 
 @app.route('/search/<query>')
 def search(query):
-    current_url = twitter_url + query + ' lang:en'
-    pag1 = requests.get(current_url, headers=oath)
-    data = pag1.json()
-    return flask.jsonify(data)
+    time = datetime.utcnow()
+    current_url = twitter_url + query + ' lang:en' + '&tweet.fields=created_at'
+    listToMerge = []
+    newjson = {}
+    for i in range(1, 6):  # request 1 times for 500 things but by differing dates
+        end_time = time - timedelta(days=i)
+        end_time = end_time.strftime(dtformat)
+        new_url = current_url + '&end_time=' + end_time
+        pag1 = requests.get(new_url, headers=oath)
+        data = pag1.json()
+        listToMerge.append(data)
+    for d in listToMerge:
+        newjson = merger.merge(newjson, d)
+    return newjson
 
 
 def getSentimentreturn(data):
@@ -81,9 +91,8 @@ def main():
         time = datetime.now()
         time = datetime.utcnow()
         current_url = twitter_url + topic + ' lang:en' + '&tweet.fields=created_at'
-        for i in range(2,
-                       12):  # request 2 times for 1000 things but by differing dates
-            end_time = time - timedelta(days=i // 2)
+        for i in range(1, 6):  # request 2 times for 1000 things but by differing dates
+            end_time = time - timedelta(days=i)
             end_time = end_time.strftime(dtformat)
             if next_token != -1:
                 # new_url = current_url + '&next_token=' + str(next_token) + '&end_time=' + end_time
