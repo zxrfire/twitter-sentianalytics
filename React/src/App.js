@@ -3,6 +3,7 @@ import { QueryClient, QueryClientProvider, useQuery } from "react-query";
 import data from "./data.json"
 import { Chart } from "./Chart"
 import { TweetList } from "./TweetList"
+import { Overview } from "./Overview"
 const queryClient = new QueryClient();
 
 
@@ -40,6 +41,7 @@ function Sentiment() {
       <div className="App">
         <h1 style={{fontSize: 70}}>Twitter Sentiment Tracker</h1>
         <h2 style={{fontSize: 40, textAlign: 'left'}}>Sentiment for "Putin"</h2>
+        <Overview data={data.data}/>
         <Chart data={processedChartData}/>
         <TweetList tweets={data?.data} />
       </div>
