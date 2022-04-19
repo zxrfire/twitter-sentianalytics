@@ -69,6 +69,7 @@ export default () => {
           legend: "none",
           trendlines: { 0: {}, 1: {} },
           pointSize: .5,
+          margin: 0
         }
       )
     }
@@ -113,18 +114,19 @@ export default () => {
           <Button variant="outline-primary" size="sm">Export</Button>
         </ButtonGroup>
 
-        {
+
+      </div>
+      <div>
+              {
           show_table > 0 &&
           <Chart
             chartType="ScatterChart"
-            width="80%"
             height="400px"
             data={data}
             options={options}
           />
         }
-
-      </div>
+        </div>
     </>
   );
 };
