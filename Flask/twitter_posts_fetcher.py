@@ -9,6 +9,9 @@ import nltk
 from jsonmerge import Merger
 from flask import Flask
 import pprint
+import aiohttp
+import asyncio
+
 
 dtformat = '%Y-%m-%dT%H:%M:%SZ'
 from datetime import datetime, timedelta
@@ -79,6 +82,13 @@ def getSentimentreturn(data):
     return results
 
 
+async def main(url, headers):
+
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            html = await response.json()
+            return html
+
 @app.route('/')
 def main():
     next_token = -1
@@ -99,8 +109,7 @@ def main():
                 new_url = current_url + '&end_time=' + end_time
             else:
                 new_url = current_url + '&end_time=' + end_time
-            pag1 = requests.get(new_url, headers=oath)
-            data = pag1.json()
+            data = requests.get(new_url, headers=oath)
 
             if 'next_token' not in data['meta']:
                 break
