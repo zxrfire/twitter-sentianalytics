@@ -9,6 +9,7 @@ import nltk
 from jsonmerge import Merger
 from flask import Flask
 import pprint
+from flask import request as flask_request
 
 dtformat = '%Y-%m-%dT%H:%M:%SZ'
 from datetime import datetime, timedelta
@@ -33,20 +34,27 @@ sia = SentimentIntensityAnalyzer()
 
 @app.route('/search/<query>')
 def search(query):
+    num_days = flask_request.args.get('num_days') or 30
     time = datetime.utcnow()
     current_url = twitter_url + query + ' lang:en' + '&tweet.fields=created_at'
     listToMerge = []
-    newjson = {}
-    for i in range(1, 6):  # request 1 times for 500 things but by differing dates
-        end_time = time - timedelta(days=i)
+    res = []
+
+    for i in range(1, (int(num_days) + 1) * 24):  # request 1 times for 500 things but by differing dates
+        end_time = time - timedelta(hours=i)
         end_time = end_time.strftime(dtformat)
         new_url = current_url + '&end_time=' + end_time
         pag1 = requests.get(new_url, headers=oath)
         data = pag1.json()
         listToMerge.append(data)
-    for d in listToMerge:
-        newjson = merger.merge(newjson, d)
-    return newjson
+
+        sentimentScores = getSentimentreturn(data["data"])
+        res.append({
+            "end_time": end_time,
+            "sentiment": sentimentScores
+        })
+
+    return { "data": res }
 
 
 def getSentimentreturn(data):
@@ -74,7 +82,7 @@ def getSentimentreturn(data):
         "avgNeu": totalNeu / 100,
         "avgPos": totalPos / 100,
         "avgCompound": totalCompound / 100,
-        "scores": sentimentScores
+        # "scores": sentimentScores
     }
     return results
 
