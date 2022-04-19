@@ -23,9 +23,19 @@ function getProcessedChartData(data) {
 
 function Sentiment() {
 
-    console.log(data)
+    // const { data, isLoading } = useQuery("itsover", async () => await (await fetch("http://localhost:5000/search/thomas?num_days=2")).json());
 
+
+    // // console.log(data)
+
+    // if (isLoading) {
+    //   return <>Loading...</>
+    // }
+    
+    console.log(data.data)
     const processedChartData = getProcessedChartData(data?.data);
+
+    console.info(processedChartData)
     return (
       <div className="App">
         <h1 style={{fontSize: 70}}>Twitter Sentiment Tracker</h1>
