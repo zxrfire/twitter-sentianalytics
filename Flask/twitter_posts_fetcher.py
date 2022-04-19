@@ -9,6 +9,8 @@ import nltk
 from jsonmerge import Merger
 from flask import Flask
 import pprint
+import aiohttp
+import asyncio
 from flask import request as flask_request
 from flask_cors import CORS
 
@@ -32,6 +34,8 @@ schema = {
 }
 merger = Merger(schema)
 sia = SentimentIntensityAnalyzer()
+listTopics = ['almond latte', 'boba', 'dji mavic', 'reactjs']
+
 
 @app.route('/search/<query>')
 def search(query):
@@ -83,43 +87,38 @@ def getSentimentreturn(data):
         "avgNeu": totalNeu / 100,
         "avgPos": totalPos / 100,
         "avgCompound": totalCompound / 100,
-        # "scores": sentimentScores
+        "scores": sentimentScores
     }
     return results
 
 
-@app.route('/')
-def main():
-    next_token = -1
-    count = 0
-    listTopics = ['almond latte', 'boba', 'dji mavic', 'reactjs']
-
-    for topic in listTopics:
-        listToMerge = []
-        newjson = {}
-        time = datetime.now()
-        time = datetime.utcnow()
-        current_url = twitter_url + topic + ' lang:en' + '&tweet.fields=created_at'
-        for i in range(1, 6):  # request 2 times for 1000 things but by differing dates
-            end_time = time - timedelta(days=i)
-            end_time = end_time.strftime(dtformat)
-            if next_token != -1:
-                # new_url = current_url + '&next_token=' + str(next_token) + '&end_time=' + end_time
-                new_url = current_url + '&end_time=' + end_time
-            else:
-                new_url = current_url + '&end_time=' + end_time
-            pag1 = requests.get(new_url, headers=oath)
-            data = pag1.json()
-
-            if 'next_token' not in data['meta']:
-                break
-            next_token = data['meta']['next_token']
+async def fetch(client, item):
+    listToMerge = []
+    newjson = {}
+    time = datetime.utcnow()
+    current_url = twitter_url + item + ' lang:en' + '&tweet.fields=created_at'
+    for i in range(1, 6):  # request 2 times for 1000 things but by differing dates
+        end_time = time - timedelta(days=i)
+        end_time = end_time.strftime(dtformat)
+        new_url = current_url + '&end_time=' + end_time
+        async with client.get(new_url, headers=oath) as resp:
+            data = await resp.json()
             listToMerge.append(data)
-        for d in listToMerge:
-            newjson = merger.merge(newjson, d)
-        print(topic + ' \n')
-        print(newjson)
-        lst = []
-        if 'data' in newjson:
-            lst.append(getSentimentreturn(newjson["data"]))
-        return {'data': lst}
+            for d in listToMerge:
+                newjson = merger.merge(newjson, d)
+            print(item + ' \n')
+            print(newjson)
+            lst = []
+            if 'data' in newjson:
+                lst.append(getSentimentreturn(newjson["data"]))
+            return lst
+
+
+@app.route('/')
+async def main():
+    async with aiohttp.ClientSession() as session:
+        fut = await asyncio.gather(*[
+            asyncio.ensure_future(fetch(session, item))
+            for item in listTopics
+        ])
+        return {'data': fut}
