@@ -39,7 +39,7 @@ listTopics = ['almond latte', 'boba', 'dji mavic', 'reactjs']
 
 @app.route('/search/<query>')
 async def search(query):
-    num_days1 = flask_request.args.get('num_days') or 30
+    num_days1 = flask_request.args.get('num_days') or 5
     async with aiohttp.ClientSession() as session:
         fut = await asyncio.gather(*[
             asyncio.ensure_future(searchfetch(session, query, num_days))
@@ -59,6 +59,7 @@ async def searchfetch(session, query, num_days):
     await asyncio.sleep(1)
     async with session.get(new_url, headers=oath) as resp:
         data = await resp.json()
+        # print(data)
         listToMerge.append(data)
         if 'data' in data:
             sentimentScores = getSentimentreturn(data["data"])
@@ -113,8 +114,8 @@ async def fetch(client, item):
             listToMerge.append(data)
             for d in listToMerge:
                 newjson = merger.merge(newjson, d)
-            print(item + ' \n')
-            print(newjson)
+            # print(item + ' \n')
+            # print(newjson)
             lst = []
             if 'data' in newjson:
                 lst.append(getSentimentreturn(newjson["data"]))
