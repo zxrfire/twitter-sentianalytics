@@ -11,12 +11,14 @@ from flask import Flask
 import pprint
 import aiohttp
 import asyncio
-
+from flask import request as flask_request
+from flask_cors import CORS
 
 dtformat = '%Y-%m-%dT%H:%M:%SZ'
 from datetime import datetime, timedelta
 
 app = Flask(__name__)
+CORS(app)
 
 dotenv.load_dotenv()
 nltk.download('vader_lexicon')
@@ -32,24 +34,32 @@ schema = {
 }
 merger = Merger(schema)
 sia = SentimentIntensityAnalyzer()
+listTopics = ['almond latte', 'boba', 'dji mavic', 'reactjs']
 
 
 @app.route('/search/<query>')
 def search(query):
+    num_days = flask_request.args.get('num_days') or 30
     time = datetime.utcnow()
     current_url = twitter_url + query + ' lang:en' + '&tweet.fields=created_at'
     listToMerge = []
-    newjson = {}
-    for i in range(1, 6):  # request 1 times for 500 things but by differing dates
-        end_time = time - timedelta(days=i)
+    res = []
+
+    for i in range(1, (int(num_days) + 1) * 24):  # request 1 times for 500 things but by differing dates
+        end_time = time - timedelta(hours=i)
         end_time = end_time.strftime(dtformat)
         new_url = current_url + '&end_time=' + end_time
         pag1 = requests.get(new_url, headers=oath)
         data = pag1.json()
         listToMerge.append(data)
-    for d in listToMerge:
-        newjson = merger.merge(newjson, d)
-    return newjson
+
+        sentimentScores = getSentimentreturn(data["data"])
+        res.append({
+            "end_time": end_time,
+            "sentiment": sentimentScores
+        })
+
+    return { "data": res }
 
 
 def getSentimentreturn(data):
@@ -82,44 +92,33 @@ def getSentimentreturn(data):
     return results
 
 
-async def main(url, headers):
+async def fetch(client, item):
+    listToMerge = []
+    newjson = {}
+    time = datetime.utcnow()
+    current_url = twitter_url + item + ' lang:en' + '&tweet.fields=created_at'
+    for i in range(1, 6):  # request 2 times for 1000 things but by differing dates
+        end_time = time - timedelta(days=i)
+        end_time = end_time.strftime(dtformat)
+        new_url = current_url + '&end_time=' + end_time
+        async with client.get(new_url, headers=oath) as resp:
+            data = await resp.json()
+            listToMerge.append(data)
+            for d in listToMerge:
+                newjson = merger.merge(newjson, d)
+            print(item + ' \n')
+            print(newjson)
+            lst = []
+            if 'data' in newjson:
+                lst.append(getSentimentreturn(newjson["data"]))
+            return lst
 
-    async with aiohttp.ClientSession() as session:
-        async with session.get(url) as response:
-            html = await response.json()
-            return html
 
 @app.route('/')
-def main():
-    next_token = -1
-    count = 0
-    listTopics = ['almond latte', 'boba', 'dji mavic', 'reactjs']
-
-    for topic in listTopics:
-        listToMerge = []
-        newjson = {}
-        time = datetime.now()
-        time = datetime.utcnow()
-        current_url = twitter_url + topic + ' lang:en' + '&tweet.fields=created_at'
-        for i in range(1, 6):  # request 2 times for 1000 things but by differing dates
-            end_time = time - timedelta(days=i)
-            end_time = end_time.strftime(dtformat)
-            if next_token != -1:
-                # new_url = current_url + '&next_token=' + str(next_token) + '&end_time=' + end_time
-                new_url = current_url + '&end_time=' + end_time
-            else:
-                new_url = current_url + '&end_time=' + end_time
-            data = requests.get(new_url, headers=oath)
-
-            if 'next_token' not in data['meta']:
-                break
-            next_token = data['meta']['next_token']
-            listToMerge.append(data)
-        for d in listToMerge:
-            newjson = merger.merge(newjson, d)
-        print(topic + ' \n')
-        print(newjson)
-        lst = []
-        if 'data' in newjson:
-            lst.append(getSentimentreturn(newjson["data"]))
-        return {'data': lst}
+async def main():
+    async with aiohttp.ClientSession() as session:
+        fut = await asyncio.gather(*[
+            asyncio.ensure_future(fetch(session, item))
+            for item in listTopics
+        ])
+        return {'data': fut}
