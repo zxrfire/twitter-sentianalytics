@@ -33,7 +33,7 @@ export default () => {
       )
       setOptions(
         {
-          title: "Sentiment Strenth of 'Michigan State' Tweets Over Time",
+          title: "Sentiments of 'Michigan State' Tweets Over Time",
           hAxis: { title: "Time" },
           vAxis: { title: "Senitment" },
           legend: "none",
@@ -54,7 +54,7 @@ export default () => {
       )
       setOptions(
         {
-          title: "Sentiment Strenth of 'Almond Latte' Tweets Over Time",
+          title: "Sentiments of 'Almond Latte' Tweets Over Time",
           hAxis: { title: "Time" },
           vAxis: { title: "Senitment" },
           legend: "none",
@@ -75,7 +75,7 @@ export default () => {
       )
       setOptions(
         {
-          title: "Sentiment Strenth of 'React Query' Tweets Over Time",
+          title: "Sentiments of 'React Query' Tweets Over Time",
           hAxis: { title: "Time" },
           vAxis: { title: "Senitment" },
           legend: "none",
@@ -97,7 +97,7 @@ export default () => {
       )
       setOptions(
         {
-          title: "Sentiment Strenth of 'Caramel Latte' Tweets Over Time",
+          title: "Sentiments of 'Caramel Latte' Tweets Over Time",
           hAxis: { title: "Time" },
           vAxis: { title: "Senitment" },
           legend: "none",
