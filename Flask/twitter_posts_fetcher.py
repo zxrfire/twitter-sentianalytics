@@ -39,10 +39,11 @@ listTopics = ['almond latte', 'boba', 'dji mavic', 'reactjs']
 
 @app.route('/search/<query>')
 async def search(query):
-    num_days = flask_request.args.get('num_days') or 30
+    num_days1 = flask_request.args.get('num_days') or 30
     async with aiohttp.ClientSession() as session:
         fut = await asyncio.gather(*[
             asyncio.ensure_future(searchfetch(session, query, num_days))
+            for num_days in range(1, (int(num_days1) + 1) * 24)
         ])
         return {'data': fut}
 
@@ -52,19 +53,20 @@ async def searchfetch(session, query, num_days):
     current_url = twitter_url + query + ' lang:en' + '&tweet.fields=created_at'
     listToMerge = []
     res = []
-    for i in range(1, (int(num_days) + 1) * 24):  # request 1 times for 500 things but by differing dates
-        end_time = time - timedelta(hours=i)
-        end_time = end_time.strftime(dtformat)
-        new_url = current_url + '&end_time=' + end_time
-        async with session.get(new_url, headers=oath) as resp:
-            data = await resp.json()
-            listToMerge.append(data)
+    end_time = time - timedelta(hours=num_days)
+    end_time = end_time.strftime(dtformat)
+    new_url = current_url + '&end_time=' + end_time
+    await asyncio.sleep(1)
+    async with session.get(new_url, headers=oath) as resp:
+        data = await resp.json()
+        listToMerge.append(data)
+        if 'data' in data:
             sentimentScores = getSentimentreturn(data["data"])
             res.append({
-                "end_time": end_time,
-                "sentiment": sentimentScores
+                    "end_time": end_time,
+                    "sentiment": sentimentScores
             })
-            return {"data": res}
+            return res
 
 
 def getSentimentreturn(data):
