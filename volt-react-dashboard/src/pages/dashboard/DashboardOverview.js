@@ -134,8 +134,7 @@ export default () => {
         </Dropdown>
 
         <ButtonGroup>
-          <Button variant="outline-primary" size="sm">Share</Button>
-          <Button variant="outline-primary" size="sm">Export</Button>
+
         </ButtonGroup>
 
 
