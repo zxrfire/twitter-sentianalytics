@@ -18,7 +18,7 @@ export default () => {
       hAxis: { title: "Time" },
       vAxis: { title: "Senitment Strength" },
       legend: "none",
-      trendlines: { 0: {}, 1: {} },
+      trendlines: { 0: {}},
       pointSize: .5,
     }
   )
@@ -35,9 +35,15 @@ export default () => {
         {
           title: "Sentiment Strenth of 'Michigan State' Tweets Over Time",
           hAxis: { title: "Time" },
-          vAxis: { title: "Senitment Strength" },
+          vAxis: { title: "Senitment" },
           legend: "none",
-          trendlines: { 0: {}, 1: {} },
+          trendlines: {
+            0: {
+              lineWidth: 2,
+              color: "red",
+              visibleInLegend: true,
+            }
+          },
           pointSize: .5,
         }
       )
@@ -50,9 +56,15 @@ export default () => {
         {
           title: "Sentiment Strenth of 'Almond Latte' Tweets Over Time",
           hAxis: { title: "Time" },
-          vAxis: { title: "Senitment Strength" },
+          vAxis: { title: "Senitment" },
           legend: "none",
-          trendlines: { 0: {}, 1: {} },
+          trendlines: {
+            0: {
+              lineWidth: 2,
+              color: "red",
+              visibleInLegend: true,
+            }
+          },
           pointSize: .5,
         }
       )
@@ -65,9 +77,15 @@ export default () => {
         {
           title: "Sentiment Strenth of 'React Query' Tweets Over Time",
           hAxis: { title: "Time" },
-          vAxis: { title: "Senitment Strength" },
+          vAxis: { title: "Senitment" },
           legend: "none",
-          trendlines: { 0: {}, 1: {} },
+          trendlines: {
+            0: {
+              lineWidth: 2,
+              color: "red",
+              visibleInLegend: true,
+            }
+          },
           pointSize: .5,
           margin: 0
         }
@@ -75,15 +93,21 @@ export default () => {
     }
     else if (topic == "Caramel Latte"){
       setData(
-        mich_state
+        caramel
       )
       setOptions(
         {
           title: "Sentiment Strenth of 'Caramel Latte' Tweets Over Time",
           hAxis: { title: "Time" },
-          vAxis: { title: "Senitment Strength" },
+          vAxis: { title: "Senitment" },
           legend: "none",
-          trendlines: { 0: {}, 1: {} },
+          trendlines: {
+            0: {
+              lineWidth: 2,
+              color: "red",
+              visibleInLegend: true,
+            }
+          },
           pointSize: .5,
         }
       )
