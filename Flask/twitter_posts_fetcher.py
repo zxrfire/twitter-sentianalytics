@@ -1,5 +1,7 @@
 import dotenv
 import json
+
+import flask
 import requests
 import os
 from nltk.sentiment import SentimentIntensityAnalyzer
@@ -34,7 +36,7 @@ def search(query):
     current_url = twitter_url + query + ' lang:en'
     pag1 = requests.get(current_url, headers=oath)
     data = pag1.json()
-    return getSentimentreturn(data['data'])
+    return flask.jsonify(data)
 
 
 def getSentimentreturn(data):
@@ -67,40 +69,8 @@ def getSentimentreturn(data):
     return results
 
 
-def getSentiment(data):
-    sentimentScores = []
-    totalNeg, totalNeu, totalPos, totalCompound = 0, 0, 0, 0
-    for x in data:
-
-        sentiment = sia.polarity_scores(x["text"])
-        sentimentScores.append({
-            "text": x["text"],
-            "created_at": x["created_at"],
-            "neg": sentiment["neg"],
-            "neu": sentiment["neu"],
-            "pos": sentiment["pos"],
-            "compound": sentiment["compound"],
-        })
-
-        totalNeg += sentiment["neg"]
-        totalNeu += sentiment["neu"]
-        totalPos += sentiment["pos"]
-        totalCompound += sentiment["compound"]
-
-    results = {
-        "avgNeg": totalNeg / 100,
-        "avgNeu": totalNeu / 100,
-        "avgPos": totalPos / 100,
-        "avgCompound": totalCompound / 100,
-        "scores": sentimentScores
-    }
-
-    with open(topic + '.json', 'w', encoding="utf-8") as f:
-        json.dump(results, f, ensure_ascii=False, indent=2)
-
-
-if __name__ == "__main__":
-
+@app.route('/')
+def main():
     next_token = -1
     count = 0
     listTopics = ['almond latte', 'boba', 'dji mavic', 'reactjs']
@@ -118,7 +88,6 @@ if __name__ == "__main__":
             if next_token != -1:
                 # new_url = current_url + '&next_token=' + str(next_token) + '&end_time=' + end_time
                 new_url = current_url + '&end_time=' + end_time
-
             else:
                 new_url = current_url + '&end_time=' + end_time
             pag1 = requests.get(new_url, headers=oath)
@@ -132,5 +101,7 @@ if __name__ == "__main__":
             newjson = merger.merge(newjson, d)
         print(topic + ' \n')
         print(newjson)
+        lst = []
         if 'data' in newjson:
-            getSentiment(newjson["data"])
+            lst.append(getSentimentreturn(newjson["data"]))
+        return {'data': lst}
