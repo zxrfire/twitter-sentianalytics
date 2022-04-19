@@ -5,7 +5,7 @@ export function Chart({ data }) {
   return (
     <div style={{ width: "100%", height: 600 }}>
       <ResponsiveLine
-        margin={{ top: 20, right: 20, bottom: 30, left: 30 }}
+        margin={{ top: 20, right: 20, bottom: 30, left: 40 }}
         colors={['#2f418f']}
         data={[
           {

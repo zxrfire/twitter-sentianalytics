@@ -1,11 +1,18 @@
+function colorScale(val, multiplier) {
+  const green = (val) => `rgb(${255 + val * multiplier},255,${255 + val * multiplier})`;
+  const red = (val) => `rgb(255,${255 - val * multiplier},${255 - val * multiplier})`;
+  return val > 0 ? red(val) : green(val);
+}
+
 function TweetListItem({ created_at, compound, neg, neu, pos, text }) {
   return (
     <div
       style={{
         border: "1px solid rgb(100, 100, 100)",
         borderRadius: "5px",
-        margin: "10px",
+        margin: "10px 0px",
         padding: "10px",
+        background: colorScale(-compound, 100)
       }}
     >
       <div
@@ -23,7 +30,9 @@ function TweetListItem({ created_at, compound, neg, neu, pos, text }) {
         <div>
           <span style={{ color: "rgb(120, 120, 120)" }}>Overall Sentiment</span>
           <br />
+          <div style={{ borderRadius: "3px"}}>
           {compound}
+          </div>
         </div>
         <div>
           <span style={{ color: "rgb(120, 120, 120)" }}>Negative</span>
@@ -66,8 +75,8 @@ export function TweetList({ tweets }) {
   return (
     <>
       <h2>Tweets</h2>
-      {getTweets(tweets).map((data) => (
-        <TweetListItem {...data} />
+      {getTweets(tweets).map((data, i) => (
+        <TweetListItem key={data.created_at + i} {...data} />
       ))}
     </>
   );
