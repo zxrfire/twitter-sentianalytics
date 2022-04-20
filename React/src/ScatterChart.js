@@ -68,12 +68,24 @@ export function ScatterChart({ data }) {
           if (node?.node?.data) {
             console.info(node);
             return (
-              <div style={{ background: "white", border: "2px solid black", padding: "10px", maxWidth: "300px" }}>
-                <span  style={{ color: "rgb(120, 120, 120)" }}>Time</span><br/>
-                <span>{new Date(node?.node?.data?.x).toLocaleString()}</span><br/>
-                <span  style={{ color: "rgb(120, 120, 120)" }}>Sentiment</span><br/>
-                <span>{node?.node?.data?.y}</span><br/>
-                <span  style={{ color: "rgb(120, 120, 120)" }}>Tweet</span><br/>
+              <div
+                style={{
+                  background: "white",
+                  border: "2px solid black",
+                  padding: "10px",
+                  maxWidth: "300px",
+                }}
+              >
+                <span style={{ color: "rgb(120, 120, 120)" }}>Time</span>
+                <br />
+                <span>{new Date(node?.node?.data?.x).toLocaleString()}</span>
+                <br />
+                <span style={{ color: "rgb(120, 120, 120)" }}>Sentiment</span>
+                <br />
+                <span>{node?.node?.data?.y}</span>
+                <br />
+                <span style={{ color: "rgb(120, 120, 120)" }}>Tweet</span>
+                <br />
                 <span>{node?.node?.data?.text}</span>
               </div>
             );

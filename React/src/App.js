@@ -41,25 +41,6 @@ function getScatterData(data) {
 function Sentiment() {
   const [query, setQuery] = useState();
   const [actualQuery, setActualQuery] = useState();
-  // const { data, isLoading } = useQuery(
-  //   "itsover",
-  //   async () =>
-  //     await (
-  //       await fetch("http://localhost:5000/search/thomas?num_days=2")
-  //     ).json()
-  // );
-
-  // // console.log(data)
-
-  // if (isLoading) {
-  //   return <>Loading...</>
-  // }
-
-  // const thomas = data.data;
-  // console.log(thomas);
-  // const processedChartData = getProcessedChartData(thomas);
-
-  // console.info(processedChartData);
 
   return (
     <div className="App">
@@ -90,17 +71,17 @@ function Sentiment() {
 }
 
 function ItsOver({ query }) {
-  // const { data, isLoading } = useQuery(
-  //   `${query}`,
-  //   async () =>
-  //     await (
-  //       await fetch(`http://localhost:5000/search/${query}?num_days=2`)
-  //     ).json()
-  // );
+  const { data, isLoading } = useQuery(
+    `${query}`,
+    async () =>
+      await (
+        await fetch(`http://localhost:5000/search/${query}?num_days=2`)
+      ).json()
+  );
   const [line, setLine] = useState(true);
-  // if (isLoading) {
-  //   return <>Loading...</>;
-  // }
+  if (isLoading) {
+    return <>Loading...</>;
+  }
   const thomas = data.data;
 
   return (
