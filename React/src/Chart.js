@@ -1,7 +1,6 @@
 import { ResponsiveLine } from "@nivo/line";
 
 export function Chart({ data }) {
-  console.info(data);
   return (
     <div style={{ width: "100%", height: 600 }}>
       <ResponsiveLine

@@ -75,7 +75,7 @@ export function TweetList({ tweets }) {
   return (
     <>
       <h2>Tweets</h2>
-      {getTweets(tweets).map((data, i) => (
+      {getTweets(tweets).slice(0, 100).map((data, i) => (
         <TweetListItem key={data.created_at + i} {...data} />
       ))}
     </>
